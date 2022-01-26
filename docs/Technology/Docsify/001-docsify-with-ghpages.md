@@ -77,5 +77,22 @@ _Note: The `pages build and deployment` action may take a while to complete. You
 
 ## 6. Map to custom domain
 
-This is not a Docsify thing - it's a GitHub + DNS configuration thing. I use [Google Domains](https://domains.google/) as my provider - so here are the steps I followed:
+This is not a Docsify thing - it's a GitHub + DNS configuration thing. I use [Google Domains](https://domains.google/) as my provider. I followed [these steps](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) to add a custom domain to GitHub Pages.
+
+ * Added _til.nitya.dev_ as Custom Domain under `Settings > Pages` in GitHub. This adds a CNAME file to the root of my `docs/` folder.
+ * On my DNS provider (Google Domains) I went to the page for the registered domain (nitya.dev) and clicked `Manage custom records`. Then `Create new record` with 
+    - Host name = til
+    - Type = CNAME
+    - TTL = 3600 (default)
+    - Data = nitya.github.io
+
+Specfically note that _Data_ points to the user-level github.io page and not to the specific project-scoped path. 
+
+That's it! Wait till settings kick in and you should be done. (Hint: Check again till you see a _"TLS certificate is being provisioned. This may take up to 15 minutes to complete."_ message on the Pages dashboard indicating that DNS changes have propagated.)
+
+Once this is done - do check the "Enforce HTTPS" box on GitHub pages to make sure this site is served only over a secure HTTP connection. It's just good practice. The entire process took about 5 mins.
+
+Visit the site `https://til.nitya.dev` and see the difference!
+
+---
 
