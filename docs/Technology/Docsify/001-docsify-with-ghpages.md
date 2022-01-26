@@ -71,4 +71,11 @@ You should see a message like ` Your site is ready to be published at https://ni
 
 Just commit the changes you've made, wait till Github automatically builds and deploys it (hint: look at [Actions](https://github.com/nitya/til/actions) tab on your repo) -- then visit that [pages URL](https://nitya.github.io/til/) - et voila!
 
+_Note: The `pages build and deployment` action may take a while to complete. You can click on the action to view individual steps and progress._
+
 ---
+
+## 6. Map to custom domain
+
+This is not a Docsify thing - it's a GitHub + DNS configuration thing. I use [Google Domains](https://domains.google/) as my provider - so here are the steps I followed:
+

@@ -1,9 +1,9 @@
 ---
-- [**`TECHNOLOGY`**](/Technology/)
- * [Docsify](/Technology/Docsify/)
+- [**`SKILL`**](/Skill/)
 
 ---
-- [**`SKILL`**](/Skill/)
+- [**`TECHNOLOGY`**](/Technology/)
+ * [Docsify](/Technology/Docsify/)
 
 ---
 - [**`TOPIC`**](/Topic/)
